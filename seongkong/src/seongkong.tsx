@@ -41,7 +41,7 @@ function Seongkong() {
 
       {/* Footer */}
       <footer className="bg-gray-100 text-center py-6 mt-12 text-sm text-gray-500">
-        © 2025 지피티. All rights reserved.
+        © 2025. All rights reserved.
       </footer>
     </div>
   );
