@@ -1,4 +1,3 @@
-// src/seongkong.ts
 import React from 'react';
 
 function Seongkong() {
