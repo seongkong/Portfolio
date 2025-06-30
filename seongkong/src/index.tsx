@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Seongkong from './seongkong';
+import Seongkong from './seongkong.tsx';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
