@@ -26,6 +26,7 @@ function Seongkong() {
         <section id="education">
           <h2 className="text-2xl font-semibold mb-4">Education</h2>
           <p>학교 및 학업 정보 내용입니다.</p>
+          <p>학교 및 학업 정보 내용입니다.</p>
         </section>
 
         <section id="skills">
