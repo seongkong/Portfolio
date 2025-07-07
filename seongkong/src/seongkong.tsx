@@ -6,7 +6,7 @@ function Seongkong() {
       {/* Header */}
       <header className="bg-white shadow-md">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold text-gray-900">포트폴리오</h1>
+          <h1 className="text-xl font-bold text-gray-900">Soengkong's Portfolio</h1>
           <nav className="space-x-6">
             <a href="#about" className="hover:text-blue-500">About</a>
             <a href="#education" className="hover:text-blue-500">Education</a>
