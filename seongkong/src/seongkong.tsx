@@ -3,14 +3,14 @@ import banner from './assets/banner.avif';
 
 function Seongkong() {
   return (
-    <div className="relative min-h-screen font-sans text-grey-800">
+    <div className="relative h-[600px] font-sans text-grey-800">
       <img
         src={banner}
         alt="Banner"
         className='absolute inset-0 w-full h-full object-cover z-0'
       />
 
-      <div className='absolute inset-0 bg-black opacity-50 z-10'></div>
+      <div className='absolute inset-0 bg-amber-900 opacity-50 z-10'></div>
 
       <div className='relative z-20 flex flex-col min-h-screen'>
         {/* Header */}
