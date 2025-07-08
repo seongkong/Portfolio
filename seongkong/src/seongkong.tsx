@@ -10,7 +10,7 @@ function Seongkong() {
         className='absolute inset-0 w-full h-full object-cover z-0'
       />
 
-      <div className='absolute inset-0 bg-amber-900 opacity-50 z-10'></div>
+      <div className='absolute inset-0 bg-[#4B2E2E] opacity-60 z-10'></div>
 
       <div className='relative z-20 flex flex-col min-h-screen'>
         {/* Header */}
