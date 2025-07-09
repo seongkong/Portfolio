@@ -3,14 +3,17 @@ import banner from './assets/banner.avif';
 
 function Seongkong() {
   return (
-    <div className="relative h-[600px] font-sans text-grey-800">
-      <img
-        src={banner}
-        alt="Banner"
-        className='absolute inset-0 w-full h-full object-cover z-0'
-      />
-
-      <div className='absolute inset-0 bg-[#4B2E2E] opacity-60 z-10'></div>
+    <div className="relative h-[600px] font-sans text-grey-800 overflow-hidden">
+      {/* 배경 이미지 + 그라데이션 */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `linear-gradient(180deg, rgba(112, 93, 80, 0.8) 0%, rgba(112, 93, 80, 0.8) 90%), url(${banner})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
 
       <div className='relative z-20 flex flex-col min-h-screen'>
         {/* Header */}
