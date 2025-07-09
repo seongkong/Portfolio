@@ -14,7 +14,7 @@ function Seongkong() {
   }, []);
 
     return (
-    <div className="relative h-[600px] font-sans text-grey-800">
+    <div className="relative h-[600px] font-kbo text-grey-800">
       {/* 배경 이미지 + 그라데이션 */}
       <div
         className="absolute inset-0 z-0"
@@ -28,9 +28,10 @@ function Seongkong() {
 
       <div className='relative z-20 flex flex-col min-h-screen'>
         {/* Header */}
-        <header className={`fixed top-0 left-0 right-0 z-30 px-4 py-4 flex justify-between items-center transition-colors duration-300
-          ${isScrolled ? 'bg-white text-gray-900 shadow-md' : 'bg-transparent text-white'}
-        `}>
+      <header className={`fixed top-0 left-0 right-0 z-30 bg-transparent py-4 transition-colors duration-300
+        ${isScrolled ? 'bg-white text-gray-900 shadow-md' : 'bg-transparent text-white'}
+      `}>
+        <div className="flex justify-between items-center mx-[200px]">
           <h1 className="text-xl font-bold">Soengkong's Portfolio</h1>
           <nav className="space-x-6">
             <a href="#about" className="hover:text-blue-400">About Me</a>
@@ -38,7 +39,8 @@ function Seongkong() {
             <a href="#skills" className="hover:text-blue-400">Skills</a>
             <a href="#projects" className="hover:text-blue-400">Projects</a>
           </nav>
-        </header>
+        </div>
+      </header>
 
         {/* Main Content */}
         <main className="flex-grow max-w-5xl mx-auto px-4 py-10 pt-28 space-y-24 text-white">

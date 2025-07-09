@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}", // src 내부만 체크
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        kbo: ['"KBO Dia Gothic"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-}
+};
