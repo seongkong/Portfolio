@@ -3,7 +3,7 @@ import banner from './assets/banner.avif';
 
 function Seongkong() {
   return (
-    <div className="relative h-[600px] font-sans text-grey-800 overflow-hidden">
+    <div className="relative h-[600px] font-sans text-grey-800">
       {/* 배경 이미지 + 그라데이션 */}
       <div
         className="absolute inset-0 z-0"
@@ -17,18 +17,18 @@ function Seongkong() {
 
       <div className='relative z-20 flex flex-col min-h-screen'>
         {/* Header */}
-        <header className="bg-transparent px-4 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold text-white">Soengkong's Portfolio</h1>
-          <nav className="space-x-6 text-white">
-            <a href="#about" className="hover:text-blue-400">About Me</a>
-            <a href="#education" className="hover:text-blue-400">Education</a>
-            <a href="#skills" className="hover:text-blue-400">Skills</a>
-            <a href="#projects" className="hover:text-blue-400">Projects</a>
-          </nav>
-        </header>
+      <header className="fixed top-0 left-0 right-0 z-30 bg-transparent px-4 py-4 flex justify-between items-center">
+        <h1 className="text-xl font-bold text-white">Soengkong's Portfolio</h1>
+        <nav className="space-x-6 text-white">
+          <a href="#about" className="hover:text-blue-400">About Me</a>
+          <a href="#education" className="hover:text-blue-400">Education</a>
+          <a href="#skills" className="hover:text-blue-400">Skills</a>
+          <a href="#projects" className="hover:text-blue-400">Projects</a>
+        </nav>
+      </header>
 
         {/* Main Content */}
-        <main className="flex-grow max-w-5xl mx-auto px-4 py-10 space-y-24 text-white">
+        <main className="flex-grow max-w-5xl mx-auto px-4 py-10 pt-28 space-y-24 text-white">
           
           {/* About */}
           <section id="about">
