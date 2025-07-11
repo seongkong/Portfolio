@@ -4,6 +4,11 @@ import banner from './assets/banner.avif';
 function Seongkong() {
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50); // 50px 넘으면 헤더 색상 변경
@@ -57,14 +62,17 @@ function Seongkong() {
       <header className={`fixed top-0 left-0 right-0 z-30 py-4 transition-colors duration-300
         ${isScrolled ? 'bg-white text-gray-900 shadow-md' : 'bg-transparent text-white'}
       `}>
-        <div className="flex justify-between items-center mx-[200px]">
-          <h1 className="text-xl font-bold">Soengkong's Portfolio</h1>
-          <nav className="space-x-6">
-            <a href="#about" className="hover:text-blue-300">About Me</a>
-            <a href="#education" className="hover:text-blue-300">Education</a>
-            <a href="#skills" className="hover:text-blue-300">Skills</a>
-            <a href="#projects" className="hover:text-blue-300">Projects</a>
-          </nav>
+        <div className="flex justify-center items-center">
+          <div className="text-xl font-bold">Soengkong's Portfolio</div>
+
+          <div className="mx-[250px]"></div>
+
+          <div className="flex space-x-6">
+            <span onClick={() => scrollToSection('about')} className="cursor-pointer hover:text-blue-300">About Me</span>
+            <span onClick={() => scrollToSection('education')} className="cursor-pointer hover:text-blue-300">Education</span>
+            <span onClick={() => scrollToSection('skills')} className="cursor-pointer hover:text-blue-300">Skills</span>
+            <span onClick={() => scrollToSection('projects')} className="cursor-pointer hover:text-blue-300">Projects</span>
+          </div>
         </div>
       </header>
 
@@ -72,7 +80,7 @@ function Seongkong() {
       <main className="flex-grow max-w-5xl mx-auto px-4 py-10 pt-28 space-y-24 text-black">
         
         {/* About */}
-        <section id="about">
+        <section id="about" className="scroll-mt-20">
           <h2 className="text-2xl font-medium mb-4">🙋‍♂️ About Me</h2>
           <p className="mb-2">Undergraduate studying Computer Science, passionate about web technologies.</p>
           <p className="mb-2">Front-End focused | Love building clean, responsive interfaces with React & TypeScript.</p>
