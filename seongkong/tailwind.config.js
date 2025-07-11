@@ -8,6 +8,11 @@ module.exports = {
       fontFamily: {
         kbo: ['"KBO Dia Gothic"', 'sans-serif'],
       },
+      fontWeight: {
+        light: 300,
+        medium: 500,
+        bold: 700,
+      }
     },
   },
   plugins: [],
