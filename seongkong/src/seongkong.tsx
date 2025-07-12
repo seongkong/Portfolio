@@ -1,8 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import banner from './assets/banner.avif';
 
 function Seongkong() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const mainRef = useRef<HTMLDivElement>(null);
+
+  const scrollToMain = () => {
+    const headerHeight = 60;
+    if (mainRef.current) {
+      const top = mainRef.current.offsetTop - headerHeight;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  };
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -45,7 +54,8 @@ function Seongkong() {
             임성빈 입니다.
           </p>
 
-          <button 
+          <button
+            onClick={scrollToMain}
             className='inline-block px-8 py-4 text-white mt-10'
             style={{
               backgroundColor: '#f4623a',
@@ -77,7 +87,7 @@ function Seongkong() {
       </header>
 
       {/* 메인 콘텐츠 */}
-      <main className="flex-grow max-w-5xl mx-auto px-4 py-10 pt-28 space-y-24 text-black">
+      <main ref={mainRef} className="flex-grow max-w-5xl mx-auto px-4 py-10 pt-28 space-y-24 text-black">
         
         {/* About */}
         <section id="about" className="scroll-mt-20">
