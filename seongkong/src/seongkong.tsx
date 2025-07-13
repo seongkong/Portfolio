@@ -86,6 +86,60 @@ function Seongkong() {
         </div>
       </header>
 
+      <section className="bg-white py-20 text-center text-black">
+        {/* 제목 영역 */}
+        <div className="mb-12">
+          <div className="text-2xl mb-2 text-gray-500">🔗</div>
+          <h2 className="text-4xl font-extrabold tracking-wide">ABOUT ME</h2>
+        </div>
+
+        {/* 정보 영역 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-6 max-w-4xl mx-auto text-sm md:text-base">
+          {/* 이름 */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl mb-2">👤</div>
+            <p className="font-medium">이름</p>
+            <p>임성빈</p>
+          </div>
+
+          {/* 생년월일 */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl mb-2">💼</div>
+            <p className="font-medium">생년월일</p>
+            <p>00.05.06</p>
+          </div>
+
+          {/* 위치 */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl mb-2">📍</div>
+            <p className="font-medium">위치</p>
+            <p>충청남도 천안시</p>
+          </div>
+
+          {/* 연락처 */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl mb-2">📞</div>
+            <p className="font-medium">연락처</p>
+            <p>010-6311-4704</p>
+          </div>
+
+          {/* 이메일 */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl mb-2">✉️</div>
+            <p className="font-medium">이메일</p>
+            <p>bins506@gmail.com</p>
+          </div>
+
+          {/* 학력 */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl mb-2">🎓</div>
+            <p className="font-medium">학력</p>
+            <p>한동대학교 (전산전자공학부 23.03 ~)</p>
+            <p>한남대학교 (경영경제학부 19.03 ~ 22.06)</p>
+          </div>
+        </div>
+      </section>
+
       {/* 메인 콘텐츠 */}
       <main ref={mainRef} className="flex-grow max-w-5xl mx-auto px-4 py-10 pt-28 space-y-24 text-black">
         
