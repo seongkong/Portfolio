@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import banner from './assets/banner.avif';
+import { FiLink } from "react-icons/fi";
 
 function Seongkong() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -88,13 +89,17 @@ function Seongkong() {
 
       <section className="bg-white py-20 text-center text-black">
         {/* 제목 영역 */}
-        <div className="mb-12">
-          <div className="text-2xl mb-2 text-gray-500">🔗</div>
-          <h2 className="text-4xl font-extrabold tracking-wide">ABOUT ME</h2>
+        <div className="mb-12 flex flex-col items-center">
+          <div className="flex items-center space-x-2 text-4xl font-extrabold tracking-wide">
+            <span className="text-gray-500">
+              <FiLink className="text-4xl text-gray-500" />
+            </span>
+            <h2>ABOUT ME</h2>
+          </div>
         </div>
 
         {/* 정보 영역 */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-6 max-w-4xl mx-auto text-sm md:text-base">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-6 max-w-5xl mx-auto text-sm md:text-base">
           {/* 이름 */}
           <div className="flex flex-col items-center">
             <div className="text-2xl mb-2">👤</div>
