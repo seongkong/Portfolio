@@ -106,68 +106,65 @@ function Seongkong() {
 
         {/* 정보 영역 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-6 max-w-5xl mx-auto text-sm md:text-base">
-          {/* 이름 */}
-          <div className="flex flex-col items-center">
-            <img src={name} alt="이름" className="w-6 h-6 mb-2" />
-            <p className="font-medium">이름</p>
-            <p>임성빈</p>
+          {/* 이름 */}  
+          <div className="flex items-center space-x-4">
+            <img src={name} alt="이름" className="w-6 h-6" />
+            <div className="text-left">
+              <p className="font-medium">이름</p>
+              <p>임성빈</p>
+            </div>
           </div>
 
           {/* 생년월일 */}
-          <div className="flex flex-col items-center">
-            <img src={birthdate} alt="생년월일" className="w-6 h-6 mb-2" />
-            <p className="font-medium">생년월일</p>
-            <p>00.05.06</p>
+          <div className="flex items-center space-x-4">
+            <img src={birthdate} alt="생년월일" className="w-6 h-6" />
+            <div className="text-left">
+              <p className="font-medium">생년월일</p>
+              <p>00.05.06</p>
+            </div>
           </div>
 
           {/* 위치 */}
-          <div className="flex flex-col items-center">
-            <img src={location} alt="위치" className="w-6 h-6 mb-2" />
-            <p className="font-medium">위치</p>
-            <p>충청남도 천안시</p>
+          <div className="flex items-center space-x-4">
+            <img src={location} alt="위치" className="w-6 h-6" />
+            <div className="text-left">
+              <p className="font-medium">위치</p>
+              <p>충청남도 천안시</p>
+            </div>
           </div>
 
           {/* 연락처 */}
-          <div className="flex flex-col items-center">
-            <img src={phone} alt="연락처" className="w-6 h-6 mb-2" />
-            <p className="font-medium">연락처</p>
-            <p>010-6311-4704</p>
+          <div className="flex items-center space-x-4">
+            <img src={phone} alt="연락처" className="w-6 h-6" />
+            <div className="text-left">
+              <p className="font-medium">연락처</p>
+              <p>010-6311-4704</p>
+            </div>
           </div>
 
           {/* 이메일 */}
-          <div className="flex flex-col items-center">
-            <img src={email} alt="이메일" className="w-6 h-6 mb-2" />
-            <p className="font-medium">이메일</p>
-            <p>bins506@gmail.com</p>
+          <div className="flex items-center space-x-4">
+            <img src={email} alt="이메일" className="w-6 h-6" />
+            <div className="text-left">
+              <p className="font-medium">이메일</p>
+              <p>bins506@gmail.com</p>
+            </div>
           </div>
 
           {/* 학력 */}
-          <div className="flex flex-col items-center">
-            <img src={education} alt="학력" className="w-6 h-6 mb-2" />
-            <p className="font-medium">학력</p>
-            <p>한동대학교 (전산전자공학부 23.03 ~)</p>
-            <p>한남대학교 (경영경제학부 19.03 ~ 22.06)</p>
+          <div className="flex items-center space-x-4">
+            <img src={education} alt="학력" className="w-6 h-6" />
+            <div className="text-left">
+              <p className="font-medium whitespace-nowrap">학력</p>
+              <p className="whitespace-nowrap">한동대학교 (전산전자공학부 23.03 ~)</p>
+              <p className="whitespace-nowrap">한남대학교 (린트 글로벌 비즈니스 19.03 ~ 22.06)</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* 메인 콘텐츠 */}
       <main ref={mainRef} className="flex-grow max-w-5xl mx-auto px-4 py-10 pt-28 space-y-24 text-black">
-        
-        {/* About */}
-        <section id="about" className="scroll-mt-20">
-          <h2 className="text-2xl font-medium mb-4">🙋‍♂️ About Me</h2>
-          <p className="mb-2">Undergraduate studying Computer Science, passionate about web technologies.</p>
-          <p className="mb-2">Front-End focused | Love building clean, responsive interfaces with React & TypeScript.</p>
-          <p className="mb-2">On a journey to become a well-rounded Full-Stack developer by learning backend systems.</p>
-
-          <h3 className="text-xl font-semibold mt-6 mb-2">📈 On My Learning Path</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>Creating dynamic UIs with React, Zustand, and Tailwind CSS</li>
-            <li>Learning backend basics with Node.js, Express, and MongoDB</li>
-            <li>Building personal projects to connect front-end and back-end seamlessly</li>
-          </ul>
-        </section>
 
         {/* Education */}
         <section id="education">
