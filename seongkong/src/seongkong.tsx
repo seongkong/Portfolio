@@ -163,6 +163,48 @@ function Seongkong() {
         </div>
       </section>
 
+      {/* SKILLS 섹션 */}
+      <section id="skills" className="py-20 text-center text-black" style={{ backgroundColor: '#f9c51d' }}>
+        {/* 제목 영역 */}
+        <div className="mb-12 flex flex-col items-center">
+          <div className="flex items-center space-x-2 text-4xl font-extrabold tracking-wide">
+            <span className="text-gray-700">
+              <FiLink className="text-4xl text-gray-700" />
+            </span>
+            <h2>SKILLS</h2>
+          </div>
+        </div>
+
+        {/* 스킬 내용 영역 (예시) */}
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left text-black px-4">
+          <div>
+            <h3 className="text-lg font-bold mb-2">Frontend</h3>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>React, Next.js</li>
+              <li>TypeScript, JavaScript</li>
+              <li>Tailwind CSS, Styled-components</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold mb-2">Backend</h3>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Node.js (Express)</li>
+              <li>Firebase, Supabase</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold mb-2">Tools & Etc</h3>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Git, GitHub</li>
+              <li>Figma</li>
+              <li>Jira, Notion</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* 메인 콘텐츠 */}
       <main ref={mainRef} className="flex-grow max-w-5xl mx-auto px-4 py-10 pt-28 space-y-24 text-black">
       </main>
