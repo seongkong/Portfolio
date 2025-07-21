@@ -93,7 +93,7 @@ function Seongkong() {
         </div>
       </header>
 
-      <section className="bg-white py-20 text-center text-black">
+      <section className="bg-white py-12 text-center text-black">
         {/* 제목 영역 */}
         <div className="mb-12 flex flex-col items-center">
           <div className="flex items-center space-x-2 text-4xl font-extrabold tracking-wide">
@@ -164,7 +164,7 @@ function Seongkong() {
       </section>
 
       {/* SKILLS 섹션 */}
-      <section id="skills" className="py-20 text-center text-black" style={{ backgroundColor: '#f9c51d' }}>
+      <section id="skills" className="py-12 text-center text-black" style={{ backgroundColor: '#f9c51d' }}>
         {/* 제목 영역 */}
         <div className="mb-12 flex flex-col items-center">
           <div className="flex items-center space-x-2 text-4xl font-extrabold tracking-wide">
