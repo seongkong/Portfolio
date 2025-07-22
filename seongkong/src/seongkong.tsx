@@ -6,6 +6,10 @@ import email from './assets/email.svg';
 import location from './assets/location.svg';
 import name from './assets/name.svg';
 import phone from './assets/phone.svg';
+import language from './assets/language.svg';
+import frontend from './assets/frontend.svg';
+import backend from './assets/backend.svg';
+import DevOps from './assets/DevOps.svg';
 import { FiLink } from "react-icons/fi";
 
 function Seongkong() {
@@ -164,43 +168,73 @@ function Seongkong() {
       </section>
 
       {/* SKILLS 섹션 */}
-      <section id="skills" className="py-12 text-center text-black" style={{ backgroundColor: '#f9c51d' }}>
+      <section id="skills" className="py-16 text-black" style={{ backgroundColor: '#f9c51d' }}>
         {/* 제목 영역 */}
         <div className="mb-12 flex flex-col items-center">
-          <div className="flex items-center space-x-2 text-4xl font-extrabold tracking-wide">
-            <span className="text-gray-700">
-              <FiLink className="text-4xl text-gray-700" />
-            </span>
+          <div className="flex items-center space-x-3 text-4xl font-extrabold tracking-wide">
+            <FiLink className="text-4xl text-brown-700" />
             <h2>SKILLS</h2>
           </div>
+          <div className="mt-1 w-20 h-[2px] bg-black"></div>
         </div>
 
-        {/* 스킬 내용 영역 (예시) */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left text-black px-4">
-          <div>
-            <h3 className="text-lg font-bold mb-2">Frontend</h3>
-            <ul className="list-disc list-inside space-y-1 text-sm">
-              <li>React, Next.js</li>
-              <li>TypeScript, JavaScript</li>
-              <li>Tailwind CSS, Styled-components</li>
-            </ul>
+        {/* 세로 카드 전체 영역 */}
+        <div className="max-w-4xl mx-auto bg-[#fdf3d6] rounded-3xl shadow-xl p-10 flex flex-col space-y-10">
+          {/* Language */}
+          <div className="flex items-start space-x-4">
+            <img src={language} alt="language" className="w-8 h-8 mt-1" />
+            <div>
+              <h3 className="text-lg font-bold mb-3">Language</h3>
+              <div className="flex flex-wrap gap-2 text-sm">
+                <span className="bg-blue-600 text-white px-2 py-1 rounded">TypeScript</span>
+                <span className="bg-yellow-300 text-black px-2 py-1 rounded">JavaScript</span>
+                <span className="bg-blue-400 text-white px-2 py-1 rounded">Python</span>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <h3 className="text-lg font-bold mb-2">Backend</h3>
-            <ul className="list-disc list-inside space-y-1 text-sm">
-              <li>Node.js (Express)</li>
-              <li>Firebase, Supabase</li>
-            </ul>
+          {/* Frontend */}
+          <div className="flex items-start space-x-4">
+            <img src={frontend} alt="frontend" className="w-8 h-8 mt-1" />
+            <div>
+              <h3 className="text-lg font-bold mb-3">Frontend</h3>
+              <div className="flex flex-wrap gap-2 text-sm">
+                <span className="bg-black text-white px-2 py-1 rounded">Next.js (React)</span>
+                <span className="bg-gray-700 text-white px-2 py-1 rounded">Zustand</span>
+                <span className="bg-blue-500 text-white px-2 py-1 rounded">Recoil</span>
+                <span className="bg-rose-500 text-white px-2 py-1 rounded">React-Query</span>
+                <span className="bg-gray-900 text-white px-2 py-1 rounded">React-Hook-Form</span>
+                <span className="bg-pink-400 text-white px-2 py-1 rounded">Sass</span>
+                <span className="bg-sky-400 text-white px-2 py-1 rounded">Tailwind CSS</span>
+                <span className="bg-fuchsia-500 text-white px-2 py-1 rounded">Emotion</span>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <h3 className="text-lg font-bold mb-2">Tools & Etc</h3>
-            <ul className="list-disc list-inside space-y-1 text-sm">
-              <li>Git, GitHub</li>
-              <li>Figma</li>
-              <li>Jira, Notion</li>
-            </ul>
+          {/* Backend */}
+          <div className="flex items-start space-x-4">
+            <img src={backend} alt="backend" className="w-8 h-8 mt-1" />
+            <div>
+              <h3 className="text-lg font-bold mb-3">Backend</h3>
+              <div className="flex flex-wrap gap-2 text-sm">
+                <span className="bg-green-900 text-white px-2 py-1 rounded">Django</span>
+                <span className="bg-yellow-500 text-black px-2 py-1 rounded">Firebase</span>
+                <span className="bg-green-500 text-white px-2 py-1 rounded">Supabase</span>
+              </div>
+            </div>
+          </div>
+
+          {/* DevOps */}
+          <div className="flex items-start space-x-4">
+            <img src={DevOps} alt="DevOps" className="w-8 h-8 mt-1" />
+            <div>
+              <h3 className="text-lg font-bold mb-3">DevOps</h3>
+              <div className="flex flex-wrap gap-2 text-sm">
+                <span className="bg-orange-400 text-white px-2 py-1 rounded">AWS</span>
+                <span className="bg-black text-white px-2 py-1 rounded">Vercel</span>
+                <span className="bg-blue-600 text-white px-2 py-1 rounded">Docker</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
