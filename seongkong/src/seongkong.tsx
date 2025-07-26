@@ -90,14 +90,14 @@ function Seongkong() {
 
           <div className="flex space-x-6">
             <span onClick={() => scrollToSection('about')} className="cursor-pointer hover:text-blue-300">About Me</span>
-            <span onClick={() => scrollToSection('education')} className="cursor-pointer hover:text-blue-300">Education</span>
-            <span onClick={() => scrollToSection('skills')} className="cursor-pointer hover:text-blue-300">Skills</span>
+            <span onClick={() => scrollToSection('education')} className="cursor-pointer hover:text-blue-300">Skills</span>
+            <span onClick={() => scrollToSection('skills')} className="cursor-pointer hover:text-blue-300">Archiving</span>
             <span onClick={() => scrollToSection('projects')} className="cursor-pointer hover:text-blue-300">Projects</span>
           </div>
         </div>
       </header>
 
-      <section className="bg-white py-12 text-center text-black">
+      <section ref={mainRef} className="bg-white py-24 text-center text-black">
         {/* 제목 영역 */}
         <div className="mb-12 flex flex-col items-center">
           <div className="flex items-center space-x-2 text-4xl font-extrabold tracking-wide">
@@ -111,8 +111,8 @@ function Seongkong() {
         {/* 정보 영역 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-6 max-w-5xl mx-auto text-sm md:text-base">
           {/* 이름 */}  
-          <div className="flex items-center space-x-4">
-            <img src={name} alt="이름" className="w-6 h-6" />
+          <div className="flex items-center space-x-6">
+            <img src={name} alt="이름" className="w-8 h-8" />
             <div className="text-left">
               <p className="font-medium">이름</p>
               <p>임성빈</p>
@@ -120,8 +120,8 @@ function Seongkong() {
           </div>
 
           {/* 생년월일 */}
-          <div className="flex items-center space-x-4">
-            <img src={birthdate} alt="생년월일" className="w-6 h-6" />
+          <div className="flex items-center space-x-6">
+            <img src={birthdate} alt="생년월일" className="w-8 h-8" />
             <div className="text-left">
               <p className="font-medium">생년월일</p>
               <p>00.05.06</p>
@@ -129,8 +129,8 @@ function Seongkong() {
           </div>
 
           {/* 위치 */}
-          <div className="flex items-center space-x-4">
-            <img src={location} alt="위치" className="w-6 h-6" />
+          <div className="flex items-center space-x-6">
+            <img src={location} alt="위치" className="w-8 h-8" />
             <div className="text-left">
               <p className="font-medium">위치</p>
               <p>충청남도 천안시</p>
@@ -138,8 +138,8 @@ function Seongkong() {
           </div>
 
           {/* 연락처 */}
-          <div className="flex items-center space-x-4">
-            <img src={phone} alt="연락처" className="w-6 h-6" />
+          <div className="flex items-center space-x-6">
+            <img src={phone} alt="연락처" className="w-8 h-8" />
             <div className="text-left">
               <p className="font-medium">연락처</p>
               <p>010-6311-4704</p>
@@ -147,8 +147,8 @@ function Seongkong() {
           </div>
 
           {/* 이메일 */}
-          <div className="flex items-center space-x-4">
-            <img src={email} alt="이메일" className="w-6 h-6" />
+          <div className="flex items-center space-x-6">
+            <img src={email} alt="이메일" className="w-8 h-8" />
             <div className="text-left">
               <p className="font-medium">이메일</p>
               <p>bins506@gmail.com</p>
@@ -156,8 +156,8 @@ function Seongkong() {
           </div>
 
           {/* 학력 */}
-          <div className="flex items-center space-x-4">
-            <img src={education} alt="학력" className="w-6 h-6" />
+          <div className="flex items-center space-x-6">
+            <img src={education} alt="학력" className="w-8 h-8" />
             <div className="text-left">
               <p className="font-medium whitespace-nowrap">학력</p>
               <p className="whitespace-nowrap">한동대학교 (전산전자공학부 23.03 ~)</p>
@@ -178,73 +178,65 @@ function Seongkong() {
           <div className="mt-1 w-20 h-[2px] bg-black"></div>
         </div>
 
-        {/* 세로 카드 전체 영역 */}
-        <div className="max-w-4xl mx-auto bg-[#fdf3d6] rounded-3xl shadow-xl p-10 flex flex-col space-y-10">
+        {/* Skill 리스트 */}
+        <div className="max-w-6xl mx-auto bg-[#fdf3d6] rounded-3xl shadow-xl p-10 space-y-6">
+          
           {/* Language */}
-          <div className="flex items-start space-x-4">
-            <img src={language} alt="language" className="w-8 h-8 mt-1" />
-            <div>
-              <h3 className="text-lg font-bold mb-3">Language</h3>
-              <div className="flex flex-wrap gap-2 text-sm">
-                <span className="bg-blue-600 text-white px-2 py-1 rounded">TypeScript</span>
-                <span className="bg-yellow-300 text-black px-2 py-1 rounded">JavaScript</span>
-                <span className="bg-blue-400 text-white px-2 py-1 rounded">Python</span>
-              </div>
+          <div className="flex items-center space-x-4">
+            <img src={language} alt="language" className="w-8 h-8" />
+            <h3 className="text-lg font-bold w-32">Language</h3>
+            <div className="flex flex-wrap gap-2 text-sm">
+              <span className="bg-gray-700 text-white px-2 py-1 rounded">C</span>
+              <span className="bg-gray-700 text-white px-2 py-1 rounded">C++</span>
+              <span className="bg-blue-400 text-white px-2 py-1 rounded">Dart</span>
+              <span className="bg-blue-500 text-white px-2 py-1 rounded">Python</span>
+              <span className="bg-yellow-300 text-black px-2 py-1 rounded">JavaScript</span>
+              <span className="bg-blue-600 text-white px-2 py-1 rounded">TypeScript</span>
+              <span className="bg-orange-500 text-white px-2 py-1 rounded">Swift</span>
             </div>
           </div>
 
           {/* Frontend */}
-          <div className="flex items-start space-x-4">
-            <img src={frontend} alt="frontend" className="w-8 h-8 mt-1" />
-            <div>
-              <h3 className="text-lg font-bold mb-3">Frontend</h3>
-              <div className="flex flex-wrap gap-2 text-sm">
-                <span className="bg-black text-white px-2 py-1 rounded">Next.js (React)</span>
-                <span className="bg-gray-700 text-white px-2 py-1 rounded">Zustand</span>
-                <span className="bg-blue-500 text-white px-2 py-1 rounded">Recoil</span>
-                <span className="bg-rose-500 text-white px-2 py-1 rounded">React-Query</span>
-                <span className="bg-gray-900 text-white px-2 py-1 rounded">React-Hook-Form</span>
-                <span className="bg-pink-400 text-white px-2 py-1 rounded">Sass</span>
-                <span className="bg-sky-400 text-white px-2 py-1 rounded">Tailwind CSS</span>
-                <span className="bg-fuchsia-500 text-white px-2 py-1 rounded">Emotion</span>
-              </div>
+          <div className="flex items-center space-x-4">
+            <img src={frontend} alt="frontend" className="w-8 h-8" />
+            <h3 className="text-lg font-bold w-32">Frontend</h3>
+            <div className="flex flex-wrap gap-2 text-sm">
+              <span className="bg-orange-600 text-white px-2 py-1 rounded">HTML5</span>
+              <span className="bg-blue-500 text-white px-2 py-1 rounded">CSS3</span>
+              <span className="bg-sky-600 text-white px-2 py-1 rounded">React</span>
+              <span className="bg-blue-400 text-white px-2 py-1 rounded">Flutter</span>
+              <span className="bg-blue-500 text-white px-2 py-1 rounded">Recoil</span>
+              <span className="bg-rose-500 text-white px-2 py-1 rounded">React-Query</span>
+              <span className="bg-sky-400 text-white px-2 py-1 rounded">Tailwind CSS</span>
+              <span className="bg-purple-500 text-white px-2 py-1 rounded">Styled-Components</span>
             </div>
           </div>
 
           {/* Backend */}
-          <div className="flex items-start space-x-4">
-            <img src={backend} alt="backend" className="w-8 h-8 mt-1" />
-            <div>
-              <h3 className="text-lg font-bold mb-3">Backend</h3>
-              <div className="flex flex-wrap gap-2 text-sm">
-                <span className="bg-green-900 text-white px-2 py-1 rounded">Django</span>
-                <span className="bg-yellow-500 text-black px-2 py-1 rounded">Firebase</span>
-                <span className="bg-green-500 text-white px-2 py-1 rounded">Supabase</span>
-              </div>
+          <div className="flex items-center space-x-4">
+            <img src={backend} alt="backend" className="w-8 h-8" />
+            <h3 className="text-lg font-bold w-32">Backend</h3>
+            <div className="flex flex-wrap gap-2 text-sm">
+              <span className="bg-green-700 text-white px-2 py-1 rounded">MySQL</span>
+              <span className="bg-lime-600 text-white px-2 py-1 rounded">Node.js</span>
             </div>
           </div>
 
           {/* DevOps */}
-          <div className="flex items-start space-x-4">
-            <img src={DevOps} alt="DevOps" className="w-8 h-8 mt-1" />
-            <div>
-              <h3 className="text-lg font-bold mb-3">DevOps</h3>
-              <div className="flex flex-wrap gap-2 text-sm">
-                <span className="bg-orange-400 text-white px-2 py-1 rounded">AWS</span>
-                <span className="bg-black text-white px-2 py-1 rounded">Vercel</span>
-                <span className="bg-blue-600 text-white px-2 py-1 rounded">Docker</span>
-              </div>
+          <div className="flex items-center space-x-4">
+            <img src={DevOps} alt="DevOps" className="w-8 h-8" />
+            <h3 className="text-lg font-bold w-32">DevOps</h3>
+            <div className="flex flex-wrap gap-2 text-sm">
+              <span className="bg-blue-600 text-white px-2 py-1 rounded">Docker</span>
+              <span className="bg-green-600 text-white px-2 py-1 rounded">Netlify</span>
+              <span className="bg-black text-white px-2 py-1 rounded">Vercel</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 메인 콘텐츠 */}
-      <main ref={mainRef} className="flex-grow max-w-5xl mx-auto px-4 py-10 pt-28 space-y-24 text-black">
-      </main>
-
       {/* Footer */}
-      <footer className="bg-gray-100 text-center py-6 mt-12 text-sm text-gray-500">
+      <footer className="bg-gray-100 text-center py-6 text-sm text-gray-500">
         © 2025. All rights reserved.
       </footer>
     </div>
