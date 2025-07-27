@@ -101,10 +101,11 @@ function Seongkong() {
         {/* 제목 영역 */}
         <div className="mb-12 flex flex-col items-center">
           <div className="flex items-center space-x-2 text-4xl font-extrabold tracking-wide">
-            <span className="text-gray-500">
-              <FiLink className="text-4xl text-gray-500" />
-            </span>
-            <h2>ABOUT ME</h2>
+            <FiLink className="text-4xl text-gray-500" />
+            <div className="relative">
+              <span className="z-10 relative">ABOUT ME</span>
+              <div className="absolute bottom-[-15px] left-0 w-full h-[1px] bg-gray-300" />
+            </div>
           </div>
         </div>
 
@@ -171,11 +172,13 @@ function Seongkong() {
       <section id="skills" className="py-16 text-black" style={{ backgroundColor: '#f9c51d' }}>
         {/* 제목 영역 */}
         <div className="mb-12 flex flex-col items-center">
-          <div className="flex items-center space-x-3 text-4xl font-extrabold tracking-wide">
-            <FiLink className="text-4xl text-brown-700" />
-            <h2>SKILLS</h2>
+          <div className="flex items-center space-x-2 text-4xl font-extrabold tracking-wide">
+            <FiLink className="text-4xl text-gray-500" />
+            <div className="relative">
+              <span className="z-10 relative">SKILLS</span>
+              <div className="absolute bottom-[-15px] left-0 w-full h-[1px] bg-black" />
+            </div>
           </div>
-          <div className="mt-1 w-20 h-[2px] bg-black"></div>
         </div>
 
         {/* Skill 리스트 */}
@@ -231,6 +234,35 @@ function Seongkong() {
               <span className="bg-green-600 text-white px-2 py-1 rounded">Netlify</span>
               <span className="bg-black text-white px-2 py-1 rounded">Vercel</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ARCHIVING 섹션 */}
+      <section id="archiving" className="py-20 text-white" style={{ backgroundColor: '#222' }}>
+        {/* 제목 영역 */}
+        <div className="mb-12 flex flex-col items-center">
+          <div className="flex items-center space-x-3 text-4xl font-extrabold tracking-wide">
+            <FiLink className="text-4xl text-white" />
+            <div className="relative">
+              <span className='z-10 relative'>ARCHIVING</span>
+              <div className='absolute bottom-[-15px] left-0 w-full h-[1px] bg-white' />
+            </div>
+          </div>
+        </div>
+
+        {/* 카드 컨테이너 */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-10 max-w-4xl mx-auto px-4">
+          {/* GitHub 카드 */}
+          <div className="bg-gray-100 rounded-2xl p-6 w-full md:w-1/2 shadow-md text-black">
+            <div className="flex items-center mb-4 space-x-3">
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-8 h-8" />
+              <h3 className="text-xl font-bold">GitHub</h3>
+            </div>
+            <a href="https://github.com/seongkong" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline block mb-2">
+              github.com/seongkong
+            </a>
+            <p className="text-sm text-gray-700">소스 코드 저장소</p>
           </div>
         </div>
       </section>
