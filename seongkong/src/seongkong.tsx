@@ -267,6 +267,65 @@ function Seongkong() {
         </div>
       </section>
 
+      {/* PROJECTS 섹션 */}
+      <section id="projects" className="bg-white py-20 text-black">
+        {/* 제목 영역 */}
+        <div className="mb-12 flex flex-col items-center">
+          <div className="flex items-center space-x-3 text-4xl font-extrabold tracking-wide">
+            <FiLink className="text-4xl text-black" />
+            <div className="relative">
+              <span className="z-10 relative">PROJECTS</span>
+              <div className="absolute bottom-[-15px] left-0 w-full h-[1px] bg-black" />
+            </div>
+          </div>
+        </div>
+
+        {/* 카드 리스트 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-4">
+          {/* 프로젝트 카드 */}
+          <div className="bg-white rounded-2xl p-6 shadow-md border">
+            <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full">react-bulk-form</span>
+            <p className="text-sm text-gray-600 mt-1">2025.03</p>
+            <h3 className="mt-3 font-bold text-lg">Form 상태의 일괄 관리를 위한 간단한 React 라이브러리</h3>
+            <ul className="text-sm text-gray-700 list-disc list-inside mt-2 space-y-1">
+              <li>Form 필드 결과 오류, 상태 추적 등</li>
+              <li>UX 단순화, 상태 UI 제거로 사용자 경험 향상</li>
+            </ul>
+            <a href="https://www.npmjs.com/package/react-bulk-form" className="text-blue-600 underline text-sm mt-2 block">
+              https://www.npmjs.com/package/react-bulk-form
+            </a>
+            <div className="flex flex-wrap gap-2 text-xs mt-4">
+              <span className="bg-yellow-300 text-black px-2 py-1 rounded">TypeScript</span>
+              <span className="bg-sky-500 text-white px-2 py-1 rounded">React</span>
+            </div>
+            <button className="mt-3 text-sm bg-gray-200 px-3 py-1 rounded">📄 README</button>
+          </div>
+
+          {/* 두 번째 프로젝트 카드 예시 */}
+          <div className="bg-white rounded-2xl p-6 shadow-md border">
+            <span className="bg-red-600 text-white text-xs px-2 py-1 rounded-full">IT 엘도라도 (블로그)</span>
+            <p className="text-sm text-gray-600 mt-1">2024.09 (1人 개인 프로젝트)</p>
+            <h3 className="mt-3 font-bold text-lg">Notion API/DB와 연동하여 개발한 개인 블로그</h3>
+            <ul className="text-sm text-gray-700 list-disc list-inside mt-2 space-y-1">
+              <li>Notion API 연동</li>
+              <li>SEO, 댓글, 커뮤니티 기능 포함</li>
+            </ul>
+            <a href="https://it-eldorado.com" className="text-blue-600 underline text-sm mt-2 block">
+              https://it-eldorado.com
+            </a>
+            <div className="flex flex-wrap gap-2 text-xs mt-4">
+              <span className="bg-blue-500 text-white px-2 py-1 rounded">TypeScript</span>
+              <span className="bg-black text-white px-2 py-1 rounded">Next.js</span>
+              <span className="bg-green-500 text-white px-2 py-1 rounded">Zustand</span>
+              <span className="bg-purple-500 text-white px-2 py-1 rounded">Tailwind CSS</span>
+              <span className="bg-yellow-500 text-black px-2 py-1 rounded">Notion</span>
+              <span className="bg-black text-white px-2 py-1 rounded">Vercel</span>
+            </div>
+            <button className="mt-3 text-sm bg-gray-200 px-3 py-1 rounded">📄 README</button>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-100 text-center py-6 text-sm text-gray-500">
         © 2025. All rights reserved.
