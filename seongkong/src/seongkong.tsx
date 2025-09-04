@@ -337,3 +337,4 @@ function Seongkong() {
 export default Seongkong;
 
 // 뭐가 뭔지 잘 모르겠다... 다시 시작해보자..
+// 잰디,,,,
