@@ -303,23 +303,20 @@ function Seongkong() {
 
           {/* 두 번째 프로젝트 카드 예시 */}
           <div className="bg-white rounded-2xl p-6 shadow-md border">
-            <span className="bg-red-600 text-white text-xs px-2 py-1 rounded-full">IT 엘도라도 (블로그)</span>
-            <p className="text-sm text-gray-600 mt-1">2024.09 (1人 개인 프로젝트)</p>
-            <h3 className="mt-3 font-bold text-lg">Notion API/DB와 연동하여 개발한 개인 블로그</h3>
+            <span className="bg-red-600 text-white text-xs px-2 py-1 rounded-full">어플리케이션 개발</span>
+            <p className="text-sm text-gray-600 mt-1">2024.08.06~</p>
+            <h3 className="mt-3 font-bold text-lg">앱, 웹 콘텐츠를 저장하고 분류해두는 북마크 관리 서비스, RooT!</h3>
             <ul className="text-sm text-gray-700 list-disc list-inside mt-2 space-y-1">
               <li>Notion API 연동</li>
               <li>SEO, 댓글, 커뮤니티 기능 포함</li>
             </ul>
-            <a href="https://it-eldorado.com" className="text-blue-600 underline text-sm mt-2 block">
-              https://it-eldorado.com
+            <a href="https://github.com/HandongRoot/Root_FE" className="text-blue-600 underline text-sm mt-2 block">
+              https://github.com/HandongRoot/Root_FE
             </a>
             <div className="flex flex-wrap gap-2 text-xs mt-4">
-              <span className="bg-blue-500 text-white px-2 py-1 rounded">TypeScript</span>
-              <span className="bg-black text-white px-2 py-1 rounded">Next.js</span>
-              <span className="bg-green-500 text-white px-2 py-1 rounded">Zustand</span>
-              <span className="bg-purple-500 text-white px-2 py-1 rounded">Tailwind CSS</span>
-              <span className="bg-yellow-500 text-black px-2 py-1 rounded">Notion</span>
-              <span className="bg-black text-white px-2 py-1 rounded">Vercel</span>
+              <span className="bg-blue-500 text-white px-2 py-1 rounded">Flutter</span>
+              <span className="bg-black text-white px-2 py-1 rounded">Swift</span>
+              <span className="bg-green-500 text-white px-2 py-1 rounded">Kotlin</span>
             </div>
             <button className="mt-3 text-sm bg-gray-200 px-3 py-1 rounded">📄 README</button>
           </div>
