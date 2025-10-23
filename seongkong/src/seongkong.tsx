@@ -320,6 +320,46 @@ function Seongkong() {
             </div>
             <button className="mt-3 text-sm bg-gray-200 px-3 py-1 rounded">📄 README</button>
           </div>
+          
+          {/* 세번째 프로젝트 카드 예시 */}
+          <div className="bg-white rounded-2xl p-6 shadow-md border">
+            <span className="bg-red-600 text-white text-xs px-2 py-1 rounded-full">웹사이트 개발</span>
+            <p className="text-sm text-gray-600 mt-1">2024.10.23~2025.05.20</p>
+            <h3 className="mt-3 font-bold text-lg">웹스크래핑 기반 방탈출 통합 예약/동행 매칭 서비스</h3>
+            <ul className="text-sm text-gray-700 list-disc list-inside mt-2 space-y-1">
+              <li>Notion API 연동</li>
+              <li>SEO, 댓글, 커뮤니티 기능 포함</li>
+            </ul>
+            <a href="https://github.com/SCRD-HGU/scrd-front" className="text-blue-600 underline text-sm mt-2 block">
+              https://github.com/SCRD-HGU/scrd-front
+            </a>
+            <div className="flex flex-wrap gap-2 text-xs mt-4">
+              <span className="bg-blue-500 text-white px-2 py-1 rounded">Flutter</span>
+              <span className="bg-black text-white px-2 py-1 rounded">Swift</span>
+              <span className="bg-green-500 text-white px-2 py-1 rounded">Kotlin</span>
+            </div>
+            <button className="mt-3 text-sm bg-gray-200 px-3 py-1 rounded">📄 README</button>
+          </div>
+
+          {/* 네번째 프로젝트 카드 예시 */}
+          <div className="bg-white rounded-2xl p-6 shadow-md border">
+            <span className="bg-red-600 text-white text-xs px-2 py-1 rounded-full">Capstone Project</span>
+            <p className="text-sm text-gray-600 mt-1">2025.03.02~Present</p>
+            <h3 className="mt-3 font-bold text-lg">Computer Vision을 활용한 축구 데이터 추출 및 분석</h3>
+            <ul className="text-sm text-gray-700 list-disc list-inside mt-2 space-y-1">
+              <li>Notion API 연동</li>
+              <li>SEO, 댓글, 커뮤니티 기능 포함</li>
+            </ul>
+            <a href="https://github.com/seongkong/Capstone_Project" className="text-blue-600 underline text-sm mt-2 block">
+              https://github.com/seongkong/Capstone_Project
+            </a>
+            <div className="flex flex-wrap gap-2 text-xs mt-4">
+              <span className="bg-blue-500 text-white px-2 py-1 rounded">Flutter</span>
+              <span className="bg-black text-white px-2 py-1 rounded">Swift</span>
+              <span className="bg-green-500 text-white px-2 py-1 rounded">Kotlin</span>
+            </div>
+            <button className="mt-3 text-sm bg-gray-200 px-3 py-1 rounded">📄 README</button>
+          </div>
         </div>
       </section>
 
