@@ -55,7 +55,7 @@ function Seongkong() {
 
         <div className='relative z-10 flex flex-col items-center justify-center h-full text-white'>
           <h2 className='text-4xl font-bold mb-4'>-임성빈-</h2>
-          <h2 className='text-4xl font-bold mb-4'>프론트 엔드 개발자 포트폴리오</h2>
+          <h2 className='text-4xl font-bold mb-4'>개발자 포트폴리오</h2>
 
           <div style={{ backgroundColor: '#f4623a' }} className="w-12 h-[2px] my-4"></div>
 
