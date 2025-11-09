@@ -61,7 +61,7 @@ function Seongkong() {
 
           <p className='text-lg font-light text-center leading-relaxed'>
             안녕하세요.<br />
-            본질에 집중하는 프론트 엔드 개발자<br />
+            빠르게 적응하는 개발자<br />
             임성빈 입니다.
           </p>
 
