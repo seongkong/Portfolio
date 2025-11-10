@@ -7,7 +7,7 @@ import location from './assets/location.svg';
 import name from './assets/name.svg';
 import phone from './assets/phone.svg';
 import language from './assets/language.svg';
-import frontend from './assets/frontend.svg';
+// import frontend from './assets/frontend.svg';
 import ai from './assets/ai.png';
 import backend from './assets/backend.svg';
 import DevOps from './assets/DevOps.svg';
