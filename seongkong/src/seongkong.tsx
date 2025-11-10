@@ -6,10 +6,10 @@ import email from './assets/email.svg';
 import location from './assets/location.svg';
 import name from './assets/name.svg';
 import phone from './assets/phone.svg';
-import language from './assets/language.svg';
-import frontend from './assets/frontend.svg';
-import backend from './assets/backend.svg';
-import DevOps from './assets/DevOps.svg';
+// import language from './assets/language.svg';
+// import frontend from './assets/frontend.svg';
+// import backend from './assets/backend.svg';
+// import DevOps from './assets/DevOps.svg';
 import { FiLink } from "react-icons/fi";
 
 function Seongkong() {
