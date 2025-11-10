@@ -168,71 +168,89 @@ function Seongkong() {
         </div>
       </section>
 
-      {/* SKILLS 섹션 */}
-      <section id="skills" className="py-16 text-black" style={{ backgroundColor: '#f9c51d' }}>
-        {/* 제목 영역 */}
+      {/* SKILLS 섹션 - StradVision 버전 */}
+      <section id="skills" className="py-16 text-white" style={{ backgroundColor: '#1c1c1c' }}>
+        {/* 제목 */}
         <div className="mb-12 flex flex-col items-center">
           <div className="flex items-center space-x-2 text-4xl font-extrabold tracking-wide">
-            <FiLink className="text-4xl text-gray-500" />
+            <FiLink className="text-4xl text-gray-400" />
             <div className="relative">
-              <span className="z-10 relative">SKILLS</span>
-              <div className="absolute bottom-[-15px] left-0 w-full h-[1px] bg-black" />
+              <span className="z-10 relative">TECH STACKS</span>
+              <div className="absolute bottom-[-15px] left-0 w-full h-[1px] bg-gray-600" />
             </div>
           </div>
         </div>
 
-        {/* Skill 리스트 */}
-        <div className="max-w-6xl mx-auto bg-[#fdf3d6] rounded-3xl shadow-xl p-10 space-y-6">
-          
+        {/* 리스트 */}
+        <div className="max-w-6xl mx-auto bg-[#2b2b2b] rounded-3xl shadow-xl p-10 space-y-10">
+
           {/* Language */}
-          <div className="flex items-center space-x-4">
-            <img src={language} alt="language" className="w-8 h-8" />
-            <h3 className="text-lg font-bold w-32">Language</h3>
+          <div>
+            <h3 className="text-xl font-bold mb-3 text-gray-300">Language</h3>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-gray-700 text-white px-2 py-1 rounded">C</span>
-              <span className="bg-gray-700 text-white px-2 py-1 rounded">C++</span>
-              <span className="bg-blue-400 text-white px-2 py-1 rounded">Dart</span>
-              <span className="bg-blue-500 text-white px-2 py-1 rounded">Python</span>
-              <span className="bg-yellow-300 text-black px-2 py-1 rounded">JavaScript</span>
-              <span className="bg-blue-600 text-white px-2 py-1 rounded">TypeScript</span>
-              <span className="bg-orange-500 text-white px-2 py-1 rounded">Swift</span>
+              <span className="bg-gray-700 px-2 py-1 rounded">C</span>
+              <span className="bg-gray-700 px-2 py-1 rounded">C++</span>
+              <span className="bg-blue-400 px-2 py-1 rounded">Dart</span>
+              <span className="bg-blue-500 px-2 py-1 rounded">Python</span>
+              <span className="bg-yellow-400 text-black px-2 py-1 rounded">JavaScript</span>
+              <span className="bg-blue-600 px-2 py-1 rounded">TypeScript</span>
+              <span className="bg-orange-500 px-2 py-1 rounded">Swift</span>
             </div>
           </div>
 
-          {/* Frontend */}
-          <div className="flex items-center space-x-4">
-            <img src={frontend} alt="frontend" className="w-8 h-8" />
-            <h3 className="text-lg font-bold w-32">Frontend</h3>
+          {/* AI / CV */}
+          <div>
+            <h3 className="text-xl font-bold mb-3 text-gray-300">AI / CV</h3>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-orange-600 text-white px-2 py-1 rounded">HTML5</span>
-              <span className="bg-blue-500 text-white px-2 py-1 rounded">CSS3</span>
-              <span className="bg-sky-600 text-white px-2 py-1 rounded">React</span>
-              <span className="bg-blue-400 text-white px-2 py-1 rounded">Flutter</span>
-              <span className="bg-blue-500 text-white px-2 py-1 rounded">Recoil</span>
-              <span className="bg-rose-500 text-white px-2 py-1 rounded">React-Query</span>
-              <span className="bg-sky-400 text-white px-2 py-1 rounded">Tailwind CSS</span>
-              <span className="bg-purple-500 text-white px-2 py-1 rounded">Styled-Components</span>
+              <span className="bg-orange-600 px-2 py-1 rounded">PyTorch</span>
+              <span className="bg-purple-500 px-2 py-1 rounded">Roboflow</span>
+              <span className="bg-green-600 px-2 py-1 rounded">OpenCV</span>
+              <span className="bg-blue-700 px-2 py-1 rounded">SAM2</span>
+              <span className="bg-rose-600 px-2 py-1 rounded">RF-DETR</span>
             </div>
           </div>
 
-          {/* Backend */}
-          <div className="flex items-center space-x-4">
-            <img src={backend} alt="backend" className="w-8 h-8" />
-            <h3 className="text-lg font-bold w-32">Backend</h3>
+          {/* Data / Analysis */}
+          <div>
+            <h3 className="text-xl font-bold mb-3 text-gray-300">Data / Analysis</h3>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-green-700 text-white px-2 py-1 rounded">MySQL</span>
-              <span className="bg-lime-600 text-white px-2 py-1 rounded">Node.js</span>
+              <span className="bg-blue-500 px-2 py-1 rounded">NumPy</span>
+              <span className="bg-purple-600 px-2 py-1 rounded">Pandas</span>
+              <span className="bg-sky-500 px-2 py-1 rounded">Matplotlib</span>
+              <span className="bg-orange-400 px-2 py-1 rounded">Scikit-learn</span>
             </div>
           </div>
 
-          {/* DevOps */}
-          <div className="flex items-center space-x-4">
-            <img src={DevOps} alt="DevOps" className="w-8 h-8" />
-            <h3 className="text-lg font-bold w-32">DevOps</h3>
+          {/* Frontend / UI */}
+          <div>
+            <h3 className="text-xl font-bold mb-3 text-gray-300">Frontend / UI</h3>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-blue-600 text-white px-2 py-1 rounded">Docker</span>
-              <span className="bg-green-600 text-white px-2 py-1 rounded">Netlify</span>
+              <span className="bg-sky-600 px-2 py-1 rounded">React</span>
+              <span className="bg-blue-400 px-2 py-1 rounded">Flutter</span>
+              <span className="bg-gray-700 px-2 py-1 rounded">Recoil</span>
+              <span className="bg-cyan-500 px-2 py-1 rounded">Tailwind CSS</span>
               <span className="bg-black text-white px-2 py-1 rounded">Vercel</span>
+              <span className="bg-green-600 px-2 py-1 rounded">Netlify</span>
+            </div>
+          </div>
+
+          {/* Backend / Database */}
+          <div>
+            <h3 className="text-xl font-bold mb-3 text-gray-300">Backend / Database</h3>
+            <div className="flex flex-wrap gap-2 text-sm">
+              <span className="bg-blue-700 px-2 py-1 rounded">MySQL</span>
+              <span className="bg-green-500 px-2 py-1 rounded">Node.js</span>
+            </div>
+          </div>
+
+          {/* Tool / Collaboration */}
+          <div>
+            <h3 className="text-xl font-bold mb-3 text-gray-300">Tool / Collaboration</h3>
+            <div className="flex flex-wrap gap-2 text-sm">
+              <span className="bg-orange-500 px-2 py-1 rounded">Git</span>
+              <span className="bg-gray-800 px-2 py-1 rounded">GitHub</span>
+              <span className="bg-gray-700 px-2 py-1 rounded">Notion</span>
+              <span className="bg-pink-500 px-2 py-1 rounded">Slack</span>
             </div>
           </div>
         </div>
