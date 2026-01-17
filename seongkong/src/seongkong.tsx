@@ -226,6 +226,7 @@ function Seongkong() {
             <h3 className="text-xl font-bold mb-3 text-gray-300">Frontend / UI</h3>
             <div className="flex flex-wrap gap-2 text-sm">
               <span className="bg-sky-600 px-2 py-1 rounded">React</span>
+              <span className="bg-rose-500 px-2 py-1 rounded">React Query</span>
               <span className="bg-blue-400 px-2 py-1 rounded">Flutter</span>
               <span className="bg-gray-700 px-2 py-1 rounded">Recoil</span>
               <span className="bg-cyan-500 px-2 py-1 rounded">Tailwind CSS</span>
@@ -240,6 +241,7 @@ function Seongkong() {
             <div className="flex flex-wrap gap-2 text-sm">
               <span className="bg-blue-700 px-2 py-1 rounded">MySQL</span>
               <span className="bg-green-500 px-2 py-1 rounded">Node.js</span>
+              <span className="bg-blue-500 px-2 py-1 rounded">Docker</span>
             </div>
           </div>
 
