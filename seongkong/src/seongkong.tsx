@@ -194,6 +194,7 @@ function Seongkong() {
               <span className="bg-blue-500 px-2 py-1 rounded">Python</span>
               <span className="bg-yellow-400 text-black px-2 py-1 rounded">JavaScript</span>
               <span className="bg-blue-600 px-2 py-1 rounded">TypeScript</span>
+              <span className="bg-indigo-500 px-2 py-1 rounded">Kotlin</span>
               <span className="bg-orange-500 px-2 py-1 rounded">Swift</span>
             </div>
           </div>
