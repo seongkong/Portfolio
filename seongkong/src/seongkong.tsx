@@ -182,78 +182,78 @@ function Seongkong() {
         </div>
 
         {/* 리스트 */}
-        <div className="max-w-6xl mx-auto bg-[#2b2b2b] rounded-3xl shadow-xl p-10 space-y-10">
+        <div className="max-w-6xl mx-auto bg-[#fef7df] rounded-3xl shadow-xl p-10 space-y-10">
 
           {/* Language */}
           <div>
-            <h3 className="text-xl font-bold mb-3 text-gray-300">Language</h3>
+            <h3 className="text-xl font-bold mb-3 text-gray-800">Language</h3>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-gray-700 px-2 py-1 rounded">C</span>
-              <span className="bg-gray-700 px-2 py-1 rounded">C++</span>
-              <span className="bg-blue-400 px-2 py-1 rounded">Dart</span>
-              <span className="bg-blue-500 px-2 py-1 rounded">Python</span>
+              <span className="bg-gray-700 text-white px-2 py-1 rounded">C</span>
+              <span className="bg-gray-700 text-white px-2 py-1 rounded">C++</span>
+              <span className="bg-blue-400 text-white px-2 py-1 rounded">Dart</span>
+              <span className="bg-blue-500 text-white px-2 py-1 rounded">Python</span>
               <span className="bg-yellow-400 text-black px-2 py-1 rounded">JavaScript</span>
-              <span className="bg-blue-600 px-2 py-1 rounded">TypeScript</span>
-              <span className="bg-indigo-500 px-2 py-1 rounded">Kotlin</span>
-              <span className="bg-orange-500 px-2 py-1 rounded">Swift</span>
+              <span className="bg-blue-600 text-white px-2 py-1 rounded">TypeScript</span>
+              <span className="bg-indigo-500 text-white px-2 py-1 rounded">Kotlin</span>
+              <span className="bg-orange-500 text-white px-2 py-1 rounded">Swift</span>
             </div>
           </div>
 
           {/* AI / CV */}
           <div>
-            <h3 className="text-xl font-bold mb-3 text-gray-300">AI / CV</h3>
+            <h3 className="text-xl font-bold mb-3 text-gray-800">AI / CV</h3>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-orange-600 px-2 py-1 rounded">PyTorch</span>
-              <span className="bg-purple-500 px-2 py-1 rounded">Roboflow</span>
-              <span className="bg-green-600 px-2 py-1 rounded">OpenCV</span>
-              <span className="bg-blue-700 px-2 py-1 rounded">SAM2</span>
-              <span className="bg-rose-600 px-2 py-1 rounded">RF-DETR</span>
+              <span className="bg-orange-600 text-white px-2 py-1 rounded">PyTorch</span>
+              <span className="bg-purple-500 text-white px-2 py-1 rounded">Roboflow</span>
+              <span className="bg-green-600 text-white px-2 py-1 rounded">OpenCV</span>
+              <span className="bg-blue-700 text-white px-2 py-1 rounded">SAM2</span>
+              <span className="bg-rose-600 text-white px-2 py-1 rounded">RF-DETR</span>
             </div>
           </div>
 
           {/* Data / Analysis */}
           <div>
-            <h3 className="text-xl font-bold mb-3 text-gray-300">Data / Analysis</h3>
+            <h3 className="text-xl font-bold mb-3 text-gray-800">Data / Analysis</h3>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-blue-500 px-2 py-1 rounded">NumPy</span>
-              <span className="bg-purple-600 px-2 py-1 rounded">Pandas</span>
-              <span className="bg-sky-500 px-2 py-1 rounded">Matplotlib</span>
-              <span className="bg-orange-400 px-2 py-1 rounded">Scikit-learn</span>
+              <span className="bg-blue-500 text-white px-2 py-1 rounded">NumPy</span>
+              <span className="bg-purple-600 text-white px-2 py-1 rounded">Pandas</span>
+              <span className="bg-sky-500 text-white px-2 py-1 rounded">Matplotlib</span>
+              <span className="bg-orange-400 text-white px-2 py-1 rounded">Scikit-learn</span>
             </div>
           </div>
 
           {/* Frontend / UI */}
           <div>
-            <h3 className="text-xl font-bold mb-3 text-gray-300">Frontend / UI</h3>
+            <h3 className="text-xl font-bold mb-3 text-gray-800">Frontend / UI</h3>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-sky-600 px-2 py-1 rounded">React</span>
-              <span className="bg-rose-500 px-2 py-1 rounded">React Query</span>
-              <span className="bg-blue-400 px-2 py-1 rounded">Flutter</span>
-              <span className="bg-gray-700 px-2 py-1 rounded">Recoil</span>
-              <span className="bg-cyan-500 px-2 py-1 rounded">Tailwind CSS</span>
+              <span className="bg-sky-600 text-white px-2 py-1 rounded">React</span>
+              <span className="bg-rose-500 text-white px-2 py-1 rounded">React Query</span>
+              <span className="bg-blue-400 text-white px-2 py-1 rounded">Flutter</span>
+              <span className="bg-gray-700 text-white px-2 py-1 rounded">Recoil</span>
+              <span className="bg-cyan-500 text-white px-2 py-1 rounded">Tailwind CSS</span>
               <span className="bg-black text-white px-2 py-1 rounded">Vercel</span>
-              <span className="bg-green-600 px-2 py-1 rounded">Netlify</span>
+              <span className="bg-green-600 text-white px-2 py-1 rounded">Netlify</span>
             </div>
           </div>
 
           {/* Backend / Database */}
           <div>
-            <h3 className="text-xl font-bold mb-3 text-gray-300">Backend / Database</h3>
+            <h3 className="text-xl font-bold mb-3 text-gray-800">Backend / Database</h3>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-blue-700 px-2 py-1 rounded">MySQL</span>
-              <span className="bg-green-500 px-2 py-1 rounded">Node.js</span>
-              <span className="bg-blue-500 px-2 py-1 rounded">Docker</span>
+              <span className="bg-blue-700 text-white px-2 py-1 rounded">MySQL</span>
+              <span className="bg-green-500 text-white px-2 py-1 rounded">Node.js</span>
+              <span className="bg-blue-500 text-white px-2 py-1 rounded">Docker</span>
             </div>
           </div>
 
           {/* Tool / Collaboration */}
           <div>
-            <h3 className="text-xl font-bold mb-3 text-gray-300">Tool / Collaboration</h3>
+            <h3 className="text-xl font-bold mb-3 text-gray-800">Tool / Collaboration</h3>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-orange-500 px-2 py-1 rounded">Git</span>
-              <span className="bg-gray-800 px-2 py-1 rounded">GitHub</span>
-              <span className="bg-gray-700 px-2 py-1 rounded">Notion</span>
-              <span className="bg-pink-500 px-2 py-1 rounded">Slack</span>
+              <span className="bg-orange-500 text-white px-2 py-1 rounded">Git</span>
+              <span className="bg-gray-800 text-white px-2 py-1 rounded">GitHub</span>
+              <span className="bg-gray-700 text-white px-2 py-1 rounded">Notion</span>
+              <span className="bg-pink-500 text-white px-2 py-1 rounded">Slack</span>
             </div>
           </div>
         </div>
