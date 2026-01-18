@@ -169,7 +169,7 @@ function Seongkong() {
       </section>
 
       {/* SKILLS 섹션 - StradVision 버전 */}
-      <section id="skills" className="py-16 text-white" style={{ backgroundColor: '#1c1c1c' }}>
+      <section id="skills" className="py-16 text-black" style={{ backgroundColor: '#facc15' }}>
         {/* 제목 */}
         <div className="mb-12 flex flex-col items-center">
           <div className="flex items-center space-x-2 text-4xl font-extrabold tracking-wide">
