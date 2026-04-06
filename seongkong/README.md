@@ -37,7 +37,7 @@
 - Invest Jarvis
   - AI 기반 투자 비서
   - Link: [https://github.com/seongkong/Invest_Jarvis](https://github.com/seongkong/Invest_Jarvis)
-- SCARLET
+- SCRDLET
   - 방탈출 테마 검색/예약/리뷰 SPA
   - Link: [https://github.com/SCRD-HGU/scrd-front](https://github.com/SCRD-HGU/scrd-front)
 - RooT

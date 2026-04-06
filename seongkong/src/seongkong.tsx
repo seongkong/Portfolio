@@ -37,7 +37,7 @@ const projects: Project[] = [
     ],
   },
   {
-    title: 'SCARLET',
+    title: 'SCRD',
     description:
       '방탈출 테마 검색·예약·리뷰 SPA. 다중 필터 UI, Recoil+React Query 상태 분리, OAuth 인증',
     href: 'https://github.com/SCRD-HGU/scrd-front',
