@@ -188,16 +188,17 @@ function Seongkong() {
             >
               GitHub 보러가기
             </a>
-            <a
-              href="#"
+            <button
+              type="button"
               className="rounded-lg px-5 py-2.5 text-sm font-semibold"
               style={{
                 border: `1px solid ${theme.border}`,
                 color: theme.text,
+                backgroundColor: 'transparent',
               }}
             >
               이력서 다운로드
-            </a>
+            </button>
           </div>
         </section>
 
