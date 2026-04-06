@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# Im Seongbin Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+개인 포트폴리오 웹사이트입니다.  
+다크 톤 디자인 시스템 기반으로 About, Projects, Skills 섹션을 단일 페이지로 구성했습니다.
 
-## Available Scripts
+## Live
 
-In the project directory, you can run:
+- Vercel: 배포 환경에서 확인 가능
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React + TypeScript (Create React App)
+- Tailwind CSS
+- GitHub Actions (CI)
+- Vercel (CD)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Design System
 
-### `npm test`
+- Background: `#0f1117`
+- Card: `#161b27`
+- Primary: `#3b82f6`
+- Text: `#e2e8f0`
+- Muted: `rgba(255,255,255,0.45)`
+- Border: `rgba(255,255,255,0.08)`
+- Font: system sans-serif
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Sections
 
-### `npm run build`
+- Nav: `Im Seongbin`, About / Projects / Skills / GitHub
+- Hero: 역할 태그 + 핵심 메시지 + CTA 버튼
+- Projects: 반응형 카드 그리드 (`auto-fit`, `minmax(280px, 1fr)`)
+- Skills: 3열 그룹 카드
+- Footer: GitHub / Email 링크
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Projects
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Invest Jarvis
+  - AI 기반 투자 비서
+  - Link: [https://github.com/seongkong/Invest_Jarvis](https://github.com/seongkong/Invest_Jarvis)
+- SCARLET
+  - 방탈출 테마 검색/예약/리뷰 SPA
+  - Link: [https://github.com/SCRD-HGU/scrd-front](https://github.com/SCRD-HGU/scrd-front)
+- RooT
+  - 크로스플랫폼 북마크 앱
+  - Link: [https://github.com/HandongRoot/Root_FE](https://github.com/HandongRoot/Root_FE)
+- Little Kids
+  - 아동 대상 서비스 웹 프로젝트
+  - Link: [https://github.com/Handong-LittleKids/Little_Kids_Web](https://github.com/Handong-LittleKids/Little_Kids_Web)
+- Hanmadi
+  - 동아리 커뮤니티 웹 서비스
+  - Link: [https://github.com/Club-PARD/Hanmadi_WEB](https://github.com/Club-PARD/Hanmadi_WEB)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+```bash
+cd seongkong
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+개발 서버: [http://localhost:3000](http://localhost:3000)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Scripts
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `npm start`: 개발 서버 실행
+- `npm run build`: 프로덕션 빌드 생성
+- `npm test`: 테스트 실행
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## CI/CD
 
-## Learn More
+- CI: GitHub Actions (`.github/workflows/ci.yml`)
+  - main/master 대상 push, pull_request에서 테스트 + 빌드 검증
+- CD: Vercel
+  - GitHub 연동 브랜치 기준 자동 배포
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Branch Strategy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `main`: 배포 안정 브랜치
+- `feature/*`: 기능/디자인 작업 브랜치
+- 작업 완료 후 PR을 통해 `main`으로 병합
