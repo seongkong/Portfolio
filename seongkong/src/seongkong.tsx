@@ -65,7 +65,7 @@ const projects: Project[] = [
   {
     title: 'Little Kids',
     description:
-      '풋살 경기 영상을 업로드하면 AI가 선수 추적·팀 분류·전술 분석 리포트를 자동 생성하는 풀스택 플랫폼. FastAPI + RunPod 서버리스 GPU 기반 비동기 분석 파이프라인을 설계하고, AWS S3 스토리지 연동 및 React 프론트엔드를 구현',
+      '풋살 경기 영상을 업로드하면 AI가 선수 추적·팀 분류·전술 분석 리포트를 자동 생성하는 풀스택 플랫폼.',
     href: 'https://github.com/Handong-LittleKids/Little_Kids_Web',
     tags: [
       { label: 'React', tone: 'primary' },
