@@ -21,7 +21,7 @@ const theme = {
   text: '#e2e8f0',
   muted: 'rgba(255,255,255,0.45)',
   border: 'rgba(255,255,255,0.08)',
-};
+};  
 
 const projects: Project[] = [
   {
